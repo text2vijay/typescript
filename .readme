@@ -3,6 +3,7 @@ To run typescript code in with node need to install
 > npm install ts-node
 > npm install -g parcel-bundler
 > parcel index.html
+> in index.html need to keep script /src/index.ts when u run parcel-bundler it will changed to index.js
 
 npm install @faker-js/faker
 import faker from '@faker-js/faker';
@@ -20,7 +21,17 @@ As the very first line in the index.ts file, you will need to add a triple slash
 > tsc --init
 > To create tsc config file.
 > tsc -W => to watch all the files in roodir
+> => configure rootdir and outdir
+> => and configure package json scripts for auto watch and auto execute
+
+"scripts": {
+"start:build": "tsc -w",
+"start:run": "nodemon build/index.js",
+"start": "concurrently npm:start:\*"
+}
 
 => to run multiple scripts concurrently & to watch files changed in nodes we need to install >npm insall nodemon concurrently
 
 =>when we use | operator b/w number and string we would see only common methods.
+
+=>
