@@ -1,0 +1,22 @@
+decorators implementation in express:
+node executes our code
+class defintion read in - decorators are executed
+decorators associate route configuration info whith the method by using metadata
+all method decorators run
+class decorator of '@controller' runs last
+class decorator reads metadata from each method , adds complete route defintion to router.
+
+
+metadata:
+Propsed feature to added to javascript(and thus TS),
+Sinppets of info that can be tied to a method , property, or class defintion
+can be used for super custom stuff
+Typescript will provide type information as metadata
+Read and written using the reflect-metadata package.
+
+we will create a metadata.ts file in our features dir. 
+>install npm install reflect-metadata
+
+"experimentalDecorators": true
+"emitDecoratorMetadata": true 
+       
