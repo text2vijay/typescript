@@ -35,3 +35,4 @@ As the very first line in the index.ts file, you will need to add a triple slash
 =>when we use | operator b/w number and string we would see only common methods.
 
 =>
+npx create-react-app react-redux-typescript --template typescript
